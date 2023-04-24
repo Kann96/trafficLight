@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,27 +13,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-jl-jWL">
-                                <rect key="frame" x="113" y="94" width="166" height="664"/>
+                                <rect key="frame" x="113" y="82" width="201" height="750"/>
                                 <subviews>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsz-kl-pah">
-                                        <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="192"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
                                     </view>
                                     <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-ac-JEY">
-                                        <rect key="frame" x="0.0" y="205" width="166" height="166"/>
+                                        <rect key="frame" x="0.0" y="231" width="201" height="192.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZI-Mk-pdn">
-                                        <rect key="frame" x="0.0" y="410" width="166" height="166"/>
+                                        <rect key="frame" x="0.0" y="462.33333333333337" width="201" height="192"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKu-hB-2kK">
-                                        <rect key="frame" x="0.0" y="615" width="166" height="49"/>
+                                        <rect key="frame" x="0.0" y="693.33333333333337" width="201" height="56.666666666666629"/>
                                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -46,10 +46,12 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mOe-ac-JEY" firstAttribute="top" secondItem="hsz-kl-pah" secondAttribute="bottom" constant="39" id="LLk-sI-HgG"/>
-                                    <constraint firstItem="eZI-Mk-pdn" firstAttribute="top" secondItem="mOe-ac-JEY" secondAttribute="bottom" constant="39" id="UOt-bX-JYk"/>
-                                    <constraint firstItem="mOe-ac-JEY" firstAttribute="top" secondItem="8R2-jl-jWL" secondAttribute="top" constant="205" id="Z2v-Wq-zCO"/>
-                                    <constraint firstItem="eZI-Mk-pdn" firstAttribute="top" secondItem="8R2-jl-jWL" secondAttribute="top" constant="410" id="mNA-Y0-z9e"/>
+                                    <constraint firstItem="hsz-kl-pah" firstAttribute="width" secondItem="mOe-ac-JEY" secondAttribute="width" id="2lq-lf-VHg"/>
+                                    <constraint firstItem="eZI-Mk-pdn" firstAttribute="width" secondItem="NKu-hB-2kK" secondAttribute="width" id="6Qg-8u-Ikr"/>
+                                    <constraint firstItem="mOe-ac-JEY" firstAttribute="height" secondItem="eZI-Mk-pdn" secondAttribute="height" id="8CT-WK-GHx"/>
+                                    <constraint firstItem="hsz-kl-pah" firstAttribute="height" secondItem="mOe-ac-JEY" secondAttribute="height" id="AqT-Vn-ual"/>
+                                    <constraint firstItem="eZI-Mk-pdn" firstAttribute="height" secondItem="NKu-hB-2kK" secondAttribute="height" multiplier="3.38776" id="Ghq-TF-LOw"/>
+                                    <constraint firstItem="mOe-ac-JEY" firstAttribute="width" secondItem="eZI-Mk-pdn" secondAttribute="width" id="KQa-lW-18B"/>
                                 </constraints>
                             </stackView>
                         </subviews>
